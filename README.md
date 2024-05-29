@@ -41,13 +41,11 @@ curl --location 'http://127.0.0.1:8000/project/' \
 }'
 
 
-curl --location 'http://127.0.0.1:8000/project/' \
+curl --location 'http://127.0.0.1:8000/collaborator/' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Basic cGFyaXRvc2gucHVyaUBnbWFpbC5jb206UGFAMTIzNDU2' \
---data '{"name": "paritosh",
-"url": "http://www.pari.com",
-"description": "my_dummy_project",
-"created_by": 1
+--data '{"description": "test 23",
+"role": "developer",
+"user": 1
 }'
 
 
